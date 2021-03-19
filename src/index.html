@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+  
+    <link rel="import" href="./HistoriaUnidades.html">
+
+  </head>
+  <body>
+    <h1>💖 Caballeria Blindada Galápagos</h1>
+    <p> Cabelleria Blindada Galápagos  </p>
+    <button id="btnTradicionesMilitares" >Tradiciones Militares</button>
+    <button id="btnHistoriaUnidades" onclick="clickHistoriaUnidades()">Historia de las Unidades</button>
+    <button id="btnHimnosCanciones" onclick="clickHimnosCanciones()">Himnos y Canciones</button>
+    <button id="btnCeremonias">Ceremonias</button>
+    <button id="btnMuseosInteractivos">Museos Interactivos</button>
+    
+  </body>
+</html>
+<script>
+  function clickHistoriaUnidades(){
+    window.open('./HistoriaUnidades.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+  function clickHimnosCanciones(){
+    window.open('./HimnosCanciones.html', '_blank', 'frame=true,nodeIntegration=yes')
+    
+  }
+</script>

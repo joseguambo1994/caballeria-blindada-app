@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+    <h1>Himnos y Canciones</h1>
+  <div>
+    <p id="cancion1"  data-value="./assets/sonidos/la_caballeria.mp3">Himno a la Caballeria blindada<p>
+  </div>
+  <div>
+    <p> Brindis de la Caballeria<p>
+  </div>
+  <div>
+    <p>Arma Ligera<p>
+  </div>
+  <audio id="audioPlayer" >
+    <source id="audioSource" src=""></source>
+    Your browser does not support the audio format.
+  </audio>
+  </body>
+</html>
+<script>
+
+document.getElementById("cancion1").addEventListener("click", (e)=>{
+  console.log(e.target)
+  var element = e.target;
+  ruta = element.getAttribute('data-value');
+  console.log("El valor de data-value es:" + ruta)
+  playSong(ruta)
+});
+
+const playSong = (ruta) => {
+  var audio = document.getElementById('audioPlayer');
+
+var source = document.getElementById('audioSource');
+source.src = ruta;
+
+audio.load(); //call this to just preload the audio without playing
+audio.play(); //call this to play the song right away
+} 
+/* function songPlay(){
+
+}
+  function soundClickHandler(e){
+
+    console.log("Click")
+  
+    var element = e.target;
+  var audio = document.getElementById('audio');
+
+  var source = document.getElementById('audioSource');
+  source.src = element.getAttribute('data-value');
+  
+  audio.load(); //call this to just preload the audio without playing
+  audio.play(); //call this to play the song right away
+    //window.open('./Sound.html', '_blank', 'top=100,left=100,frame=false,nodeIntegration=yes,width=10, heigth=10,show=false')
+    
+   
+  } */
+</script>
