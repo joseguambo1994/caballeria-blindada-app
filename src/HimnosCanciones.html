@@ -6,14 +6,18 @@
   <body>
     <h1>Himnos y Canciones</h1>
   <div>
-    <p id="cancion1"  data-value="./assets/sonidos/la_caballeria.mp3">Himno a la Caballeria blindada<p>
+    <p id="cancion1"  data-value="./assets/sonidos/himno_a_la_caballeria_blindada.mp3">Himno a la Caballeria blindada</p>
+    <p id="cancion2"  data-value="./assets/sonidos/brindis_de_la_caballeria.mp3">Brindis de la Caballeria </p>
+    <p id="cancion3"  data-value="./assets/sonidos/arma_ligera.mp3">Arma Ligera</p>    
+    <p id="cancion4"  data-value="./assets/sonidos/los_baquenos.mp3">Los Baquenos</p>
+    <p id="cancion5"  data-value="./assets/sonidos/un_general_retirado.mp3">Un General Retirado</p>
+    <p id="cancion6"  data-value="./assets/sonidos/subteniente_de_caballeria.mp3">Subteniento de Caballeria</p>
+    <p id="cancion7"  data-value="./assets/sonidos/el_caballo_blanco.mp3">Caballo Blanco</p>
+    <p id="cancion8"  data-value="./assets/sonidos/el_corralero.mp3">El Corralero</p>
+    <p id="cancion9"  data-value="./assets/sonidos/los_bravos_del_yaguachi.mp3">Los Bravos del Yaguachi</p>
+    <p id="cancion10"  data-value="./assets/sonidos/la_esposa_del_soldado.mp3">La Esposa del Soldado</p>
   </div>
-  <div>
-    <p> Brindis de la Caballeria<p>
-  </div>
-  <div>
-    <p>Arma Ligera<p>
-  </div>
+
   <audio id="audioPlayer" >
     <source id="audioSource" src=""></source>
     Your browser does not support the audio format.
@@ -23,39 +27,51 @@
 <script>
 
 document.getElementById("cancion1").addEventListener("click", (e)=>{
-  console.log(e.target)
-  var element = e.target;
-  ruta = element.getAttribute('data-value');
-  console.log("El valor de data-value es:" + ruta)
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion2").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion3").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion4").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion5").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion6").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion7").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion8").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion9").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
+  playSong(ruta)
+});
+document.getElementById("cancion10").addEventListener("click", (e)=>{
+  ruta = e.target.getAttribute('data-value');
   playSong(ruta)
 });
 
 const playSong = (ruta) => {
-  var audio = document.getElementById('audioPlayer');
-
+var audio = document.getElementById('audioPlayer');
 var source = document.getElementById('audioSource');
 source.src = ruta;
-
-audio.load(); //call this to just preload the audio without playing
-audio.play(); //call this to play the song right away
+audio.load(); 
+audio.play(); 
 } 
-/* function songPlay(){
-
-}
-  function soundClickHandler(e){
-
-    console.log("Click")
-  
-    var element = e.target;
-  var audio = document.getElementById('audio');
-
-  var source = document.getElementById('audioSource');
-  source.src = element.getAttribute('data-value');
-  
-  audio.load(); //call this to just preload the audio without playing
-  audio.play(); //call this to play the song right away
-    //window.open('./Sound.html', '_blank', 'top=100,left=100,frame=false,nodeIntegration=yes,width=10, heigth=10,show=false')
-    
-   
-  } */
 </script>
