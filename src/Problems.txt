@@ -1,0 +1,1 @@
+- Video "SalaCaballeria" its laggy on Electron, while its normal in VLC. Other "Sala" videos function well.

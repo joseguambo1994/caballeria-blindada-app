@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Casa Museo</title>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <h1>Casa Museo</h1>
+    <button id="btnSalaComunicaciones" onclick="clickSalaComunicaciones()">Introducción y Sala de comunicaciones</button>
+    <button id="btnSalaArmas" onclick="clickSalaArmas()">Batalla de Tapi y Sala de Armas</button>
+    <button id="btnSalaArtilleria" onclick="clickSalaArtilleria()">Sala de Artillería</button>
+    <button id="btnSalaCaballeria" onclick="clickSalaCaballeria()">Sala de Caballería</button>
+   
+    
+  </body>
+</html>
+<script>
+  function clickSalaComunicaciones(){
+    window.open('./SalaComunicaciones.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+  function clickSalaArmas(){
+    window.open('./SalaArmas.html', '_blank', 'frame=true,nodeIntegration=yes')
+    
+  }
+  function clickSalaArtilleria(){
+    window.open('./SalaArtilleria.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+  function clickSalaCaballeria(){
+    window.open('./SalaCaballeria.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+</script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body>
+    <h1>Museso Interactivos</h1>
+    <p> Museos Interactivos  </p>
+    <button id="btnCasaMuseo" onclick="clickCasaMuseo()">Casa Museo</button>
+    <button id="btnVehiculosBlindados" onclick="clickVehiculosBlindados()">Museo de Vehículos Blindados</button>
+   
+    
+  </body>
+</html>
+<script>
+  function clickCasaMuseo(){
+    window.open('./CasaMuseo.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+  function clickVehiculosBlindados(){
+    window.open('./MuseoVehiculosBlindados.html', '_blank', 'frame=true,nodeIntegration=yes')
+    
+  }
+</script>
