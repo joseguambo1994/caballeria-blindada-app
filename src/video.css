@@ -1,0 +1,28 @@
+#portada-video {
+    object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter:opacity(85%);
+  z-index: -1;
+  }
+.content {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .content {
+    position: fixed;
+    top: 0;
+    right: auto;
+    left: auto;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  } */

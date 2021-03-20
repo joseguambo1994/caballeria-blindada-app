@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <link rel="stylesheet" href="index.css">
-  
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="button.css">
     <link rel="import" href="./HistoriaUnidades.html">
 
   </head>
   <body>
-    <h1>💖 Caballeria Blindada Galápagos</h1>
-    <p> Cabelleria Blindada Galápagos  </p>
-    <button id="btnTradicionesMilitares" >Tradiciones Militares</button>
-    <button id="btnHistoriaUnidades" onclick="clickHistoriaUnidades()">Historia de las Unidades</button>
-    <button id="btnHimnosCanciones" onclick="clickHimnosCanciones()">Himnos y Canciones</button>
-    <button id="btnCeremonias" onclick="clickCeremonias()">Ceremonias</button>
-    <button id="btnMuseosInteractivos" onclick="clickMuseosInteractivos()">Museos Interactivos</button>
-    <button id="btnOperaciones" onclick="clickOperaciones()">Operaciones Hípicas</button>
-    <button id="btnFlorilegio" onclick="clickFlorilegio()">Florilegio</button>
-    
+    <video playsinline autoplay muted loop poster="./assets/imagenes/portada.svg" id="portada-video">
+      <source src="./assets/videos/presentacion/portada.mp4" type="video/mp4">
+    </video>
+ <div class="content">
+  <h1>💖 Caballeria Blindada Galápagos</h1>
+  <p> Cabelleria Blindada Galápagos  </p>
+  <button class="btn from-left" id="btnTradicionesMilitares" >Tradiciones Militares</button>
+  <button class="btn from-left" id="btnHistoriaUnidades" onclick="clickHistoriaUnidades()">Historia de las Unidades</button>
+  <button id="btnHimnosCanciones" onclick="clickHimnosCanciones()">Himnos y Canciones</button>
+  <button id="btnCeremonias" onclick="clickCeremonias()">Ceremonias</button>
+  <button id="btnMuseosInteractivos" onclick="clickMuseosInteractivos()">Museos Interactivos</button>
+  <button id="btnOperaciones" onclick="clickOperaciones()">Operaciones Hípicas</button>
+  <button id="btnFlorilegio" onclick="clickFlorilegio()">Florilegio</button>
+  
+ </div>
   </body>
 </html>
 <script>
