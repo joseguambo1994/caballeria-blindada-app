@@ -3,40 +3,97 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="video.css">
-    <link rel="stylesheet" href="button.css">
-    <link rel="import" href="./HistoriaUnidades.html">
+    <link rel="stylesheet" href="video.css"> 
+    <link href='./estilos/index.css' rel='stylesheet' type='text/css'> 
 
   </head>
+
   <body>
     <video playsinline autoplay muted loop poster="./assets/imagenes/portada.svg" id="portada-video">
       <source src="./assets/videos/presentacion/portada.mp4" type="video/mp4">
     </video>
- <div class="content">
-  <h1>💖 Caballeria Blindada Galápagos</h1>
-  <p> Cabelleria Blindada Galápagos  </p>
-  <button class="btn from-left" id="btnTradicionesMilitares" >Tradiciones Militares</button>
-  <button class="btn from-left" id="btnHistoriaUnidades" onclick="clickHistoriaUnidades()">Historia de las Unidades</button>
-  <button id="btnHimnosCanciones" onclick="clickHimnosCanciones()">Himnos y Canciones</button>
-  <button id="btnCeremonias" onclick="clickCeremonias()">Ceremonias</button>
-  <button id="btnMuseosInteractivos" onclick="clickMuseosInteractivos()">Museos Interactivos</button>
-  <button id="btnOperaciones" onclick="clickOperaciones()">Operaciones Hípicas</button>
-  <button id="btnFlorilegio" onclick="clickFlorilegio()">Florilegio</button>
-  
- </div>
+    
+      <div class="grid">
+    
+       <h1 class="title"> CABALLERIA BLINDADA </h1>
+        <figure class="effect-lily">
+          <img src="./assets/imagenes/portada_historia_unidades.svg" alt="img12"/>
+          <figcaption>
+            <div>
+              <h2>Tradiciones <span>Militares</span></h2>
+            </div>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-lily" onclick="clickHistoriaUnidades()">
+          <img src="./assets/imagenes/portada_historia_unidades.svg" alt="img1"/>
+          <figcaption>
+            <div>
+              <h2>Historia <span>Unidades</span></h2>
+            </div>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-lily" onclick="clickHimnosCanciones()">
+          <img src="./assets/imagenes/portada_himnos_canciones.svg" alt="img1"/>
+          <figcaption>
+            <div>
+              <h2>Himnos y <span>Canciones</span></h2>
+            </div>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-lily" onclick="clickMuseosInteractivos()">
+          <img src="./assets/imagenes/portada_museos_interactivos.svg" alt="img1"/>
+          <figcaption>
+            <div>
+              <h2>Museos <span>Interactivos</span></h2>
+              </div>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-lily" onclick="clickCeremonias()">
+          <img src="./assets/imagenes/portada_ceremonias.svg" alt="img1"/>
+          <figcaption>
+            <div>
+              <h2>Ceremonias</h2>
+             </div>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+        <figure class="effect-lily" onclick="clickOperaciones()">
+          <img src="./assets/imagenes/portada_operaciones.svg" alt="img1"/>
+          <figcaption>
+            <div>
+              <h2>Operaciones <span>Hípicas</span></h2>
+              </div>
+            <a href="#">View more</a>
+          </figcaption>     
+        </figure>
+      </figure>
+      <figure class="effect-lily" onclick="clickFlorilegio()">
+        <img src="./assets/imagenes/portada_operaciones.svg" alt="img1"/>
+        <figcaption>
+          <div>
+            <h2><span>Florilegio</span></h2>
+            </div>
+          <a href="#">View more</a>
+        </figcaption>     
+      </figure>
+      </div>
+
   </body>
 </html>
 <script>
   function clickHistoriaUnidades(){
-    window.open('./HistoriaUnidades.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+    window.open('./HistoriaUnidades.html', '_blank', 'frame=true,nodeIntegration=yes')
   }
   function clickHimnosCanciones(){
     window.open('./HimnosCanciones.html', '_blank', 'frame=true,nodeIntegration=yes')
     
   }
   function clickMuseosInteractivos(){
-    window.open('./MuseosInteractivos.html', '_blank', 'frame=true,nodeIntegration=yes')
+    window.open('./MuseosInteractivos.html', '_blank', 'frame=true,nodeIntegration=yes,fullscreen=true')
   }
   function clickCeremonias(){
     window.open('./Ceremonias.html', '_blank', 'frame=true,nodeIntegration=yes')
@@ -48,3 +105,6 @@
     window.open('./Florilegio/Florilegio.html', '_blank', 'frame=true,fullscreen=true')
   }
 </script>
+<!-- <video playsinline autoplay muted loop poster="./assets/imagenes/portada.svg" id="portada-video">
+  <source src="./assets/videos/presentacion/portada.mp4" type="video/mp4">
+</video> -->
