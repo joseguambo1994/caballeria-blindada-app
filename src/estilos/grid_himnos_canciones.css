@@ -1,0 +1,111 @@
+@font-face {
+    font-family: fuente-militar;
+    src: url(../estilos/angkatan.otf);
+  }
+  
+  .titulo {
+      grid-area: titulo;
+      background: rgba(0, 0, 0, 0.6);
+    font-family: fuente-militar;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 5px; 
+    }
+    .subtitulo {
+      grid-area: subtitulo;
+      font-size: 50px;
+      font-family: fuente-militar;
+      text-align: center;
+      color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+    #cancion1{
+      grid-area: cancion1;
+  
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+
+    }
+    #cancion2{
+      grid-area: cancion2;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion3{
+      grid-area: cancion3;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion4{
+      grid-area: cancion4;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion5{
+      grid-area: cancion5;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion6{
+      grid-area: cancion6;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion7{
+      grid-area: cancion7;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion8{
+      grid-area: cancion8;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion9{
+      grid-area: cancion9;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    #cancion10{
+      grid-area: cancion10;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background: rgba(0, 0, 0, 0.6);
+    }
+    
+   
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      "titulo"
+      "subtitulo"
+        "cancion1"
+        "cancion2"
+        "cancion3"
+        "cancion4"
+        "cancion5"
+        "cancion6"
+        "cancion7"
+        "cancion8"
+        "cancion9"
+        "cancion10"
+        ;
+      margin: 0;
+      align-items: baseline;
+      padding: 1em;
+     
+    }
+    

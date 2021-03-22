@@ -1,49 +1,65 @@
+@font-face {
+  font-family: fuente-militar;
+  src: url(../estilos/angkatan.otf);
+}
+
 .titulo {
     grid-area: titulo;
+    background: rgba(0, 0, 0, 0.6);
+  font-family: fuente-militar;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 5px; 
   }
   .subtitulo {
     grid-area: subtitulo;
-    margin: auto;
+    font-size: 50px;
+    font-family: fuente-militar;
+    text-align: center;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   }
   .unidad1{
     grid-area: unidad1;
-    margin: auto;
+margin: 0;
   }
   .unidad2{
     grid-area: unidad2;
-    margin: auto;
+margin: 0;
   }
   .unidad3{
     grid-area: unidad3;
-    margin: auto;
+margin: 0;
   }
   .unidad4{
     grid-area: unidad4;
-    margin: auto;
+margin: 0;
   }
   .unidad5{
     grid-area: unidad5;
-    margin: auto;
+margin: 0;
   }
   .unidad6{
     grid-area: unidad6;
-    margin: auto;
+margin: 0;
   }
   .unidad7{
     grid-area: unidad7;
-    margin: auto;
+margin: 0;
   }
   .unidad8{
     grid-area: unidad8;
-    margin: auto;
+margin: 0;
   }
   .unidad9{
     grid-area: unidad9;
-    margin: auto;
+margin: 0;
   }
   .unidad10{
     grid-area: unidad10;
-    margin: auto;
+margin: 0;
   }
   
  
@@ -56,4 +72,7 @@
     "subtitulo subtitulo subtitulo subtitulo subtitulo"
       "unidad1 unidad2 unidad3 unidad4 unidad5"
       "unidad6 unidad7 unidad8 unidad9 unidad10";
+    margin: 0;
+    align-items: baseline;
   }
+  

@@ -3,19 +3,27 @@
   <head>
     <title>This is the title of the webpage!</title>
   </head>
+  <link href='./estilos/video_historia_unidades.css' rel='stylesheet' type='text/css'> 
+  
+  <link href='./estilos/glitch.css' rel='stylesheet' type='text/css'> 
+  <link href='./estilos/grid_himnos_canciones.css' rel='stylesheet' type='text/css'> 
   <body>
-    <h1>Himnos y Canciones</h1>
-  <div>
-    <p id="cancion1"  data-value="./assets/sonidos/himno_a_la_caballeria_blindada.mp3">Himno a la Caballeria blindada</p>
-    <p id="cancion2"  data-value="./assets/sonidos/brindis_de_la_caballeria.mp3">Brindis de la Caballeria </p>
-    <p id="cancion3"  data-value="./assets/sonidos/arma_ligera.mp3">Arma Ligera</p>    
-    <p id="cancion4"  data-value="./assets/sonidos/los_baquenos.mp3">Los Baquenos</p>
-    <p id="cancion5"  data-value="./assets/sonidos/un_general_retirado.mp3">Un General Retirado</p>
-    <p id="cancion6"  data-value="./assets/sonidos/subteniente_de_caballeria.mp3">Subteniento de Caballeria</p>
-    <p id="cancion7"  data-value="./assets/sonidos/el_caballo_blanco.mp3">Caballo Blanco</p>
-    <p id="cancion8"  data-value="./assets/sonidos/el_corralero.mp3">El Corralero</p>
-    <p id="cancion9"  data-value="./assets/sonidos/los_bravos_del_yaguachi.mp3">Los Bravos del Yaguachi</p>
-    <p id="cancion10"  data-value="./assets/sonidos/la_esposa_del_soldado.mp3">La Esposa del Soldado</p>
+    <video playsinline autoplay muted loop poster="./assets/imagenes/portada_himnos_canciones_2.svg" id="portada-video">
+      <source src="./assets/videos/presentacion/portada_himnos_canciones.mp4" type="video/mp4">
+    </video>
+  <div class="container">
+    <h1 class="titulo"> CABALLERIA BLINDADA </h1>
+       <h2 class="subtitulo"> Himnos y Canciones </h2>
+    <p id="cancion1" class="glitch" data-glitch="Himno a la Caballeria blindada" data-value="./assets/sonidos/himno_a_la_caballeria_blindada.mp3">Himno a la Caballeria blindada</p>
+    <p id="cancion2" class="glitch" data-glitch="Brindis de la Caballeria" data-value="./assets/sonidos/brindis_de_la_caballeria.mp3">Brindis de la Caballeria </p>
+    <p id="cancion3" class="glitch" data-glitch="Arma Ligera" data-value="./assets/sonidos/arma_ligera.mp3">Arma Ligera</p>    
+    <p id="cancion4" class="glitch" data-glitch="Los Baquenos" data-value="./assets/sonidos/los_baquenos.mp3">Los Baquenos</p>
+    <p id="cancion5" class="glitch" data-glitch="Un General Retirado" data-value="./assets/sonidos/un_general_retirado.mp3">Un General Retirado</p>
+    <p id="cancion6" class="glitch" data-glitch="Subteniento de Caballeria" data-value="./assets/sonidos/subteniente_de_caballeria.mp3">Subteniento de Caballeria</p>
+    <p id="cancion7" class="glitch" data-glitch="Caballo Blanco" data-value="./assets/sonidos/el_caballo_blanco.mp3">Caballo Blanco</p>
+    <p id="cancion8" class="glitch" data-glitch="El Corralero" data-value="./assets/sonidos/el_corralero.mp3">El Corralero</p>
+    <p id="cancion9" class="glitch" data-glitch="Los Bravos del Yaguachi" data-value="./assets/sonidos/los_bravos_del_yaguachi.mp3">Los Bravos del Yaguachi</p>
+    <p id="cancion10" class="glitch" data-glitch="La Esposa del Soldado" data-value="./assets/sonidos/la_esposa_del_soldado.mp3">La Esposa del Soldado</p>
   </div>
 
   <audio id="audioPlayer" >
