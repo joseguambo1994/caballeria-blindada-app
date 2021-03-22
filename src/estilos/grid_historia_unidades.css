@@ -1,0 +1,59 @@
+.titulo {
+    grid-area: titulo;
+  }
+  .subtitulo {
+    grid-area: subtitulo;
+    margin: auto;
+  }
+  .unidad1{
+    grid-area: unidad1;
+    margin: auto;
+  }
+  .unidad2{
+    grid-area: unidad2;
+    margin: auto;
+  }
+  .unidad3{
+    grid-area: unidad3;
+    margin: auto;
+  }
+  .unidad4{
+    grid-area: unidad4;
+    margin: auto;
+  }
+  .unidad5{
+    grid-area: unidad5;
+    margin: auto;
+  }
+  .unidad6{
+    grid-area: unidad6;
+    margin: auto;
+  }
+  .unidad7{
+    grid-area: unidad7;
+    margin: auto;
+  }
+  .unidad8{
+    grid-area: unidad8;
+    margin: auto;
+  }
+  .unidad9{
+    grid-area: unidad9;
+    margin: auto;
+  }
+  .unidad10{
+    grid-area: unidad10;
+    margin: auto;
+  }
+  
+ 
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo"
+    "subtitulo subtitulo subtitulo subtitulo subtitulo"
+      "unidad1 unidad2 unidad3 unidad4 unidad5"
+      "unidad6 unidad7 unidad8 unidad9 unidad10";
+  }

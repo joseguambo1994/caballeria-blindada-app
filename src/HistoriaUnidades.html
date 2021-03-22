@@ -1,24 +1,36 @@
-<link rel="stylesheet" href="video.css">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./estilos/video.css"> 
+    <link href='./estilos/unidad.css' rel='stylesheet' type='text/css'> 
+    <link href='./estilos/grid_historia_unidades.css' rel='stylesheet' type='text/css'> 
+    </head>
 
-<div >
-  <p>Página HistoriaUnidades<P>
-  <img src="./assets/imagenes/bcb11.svg" onclick="clickBcb11()"/>
-  <img src="./assets/imagenes/gcb31.svg" onclick="clickGcb31()"/>
-  <img src="./assets/imagenes/gcb32.svg" onclick="clickGcb32()"/>
-  <img src="./assets/imagenes/gcb33.svg" onclick="clickGcb33()"/>
-  <img src="./assets/imagenes/escablin.svg" onclick="clickEscablin()"/>
-  <img src="./assets/imagenes/gcb4.svg" onclick="clickGcb4()"/>
-  <img src="./assets/imagenes/gcm12.svg" onclick="clickGcm12()"/>
-  <img src="./assets/imagenes/gcm18.svg" onclick="clickGcm18()"/>
-  <img src="./assets/imagenes/gcb36.svg" onclick="clickGcb36()"/>
-  <img src="./assets/imagenes/gcmiiide.svg" onclick="clickGcmiiide()"/>
-
-  
-<div>
-
-  <video playsinline autoplay muted loop poster="./assets/imagenes/portada_historia_unidades.svg" id="portada-video">
-    <source src="./assets/videos/presentacion/portada_historia_unidades.mp4" type="video/mp4">
-  </video>
+  <body>
+    <video playsinline autoplay muted loop poster="./assets/imagenes/portada_historia_unidades.svg" id="portada-video">
+      <source src="./assets/videos/presentacion/portada_historia_unidades.mp4" type="video/mp4">
+    </video>
+    
+     <div class="container">
+    
+       <h1 class="titulo"> CABALLERIA BLINDADA </h1>
+        <img class="unidad1 unidad-sepia" src="./assets/imagenes/bcb11.svg"  onclick="clickBcb11()"/>
+        <img class="unidad2 unidad-sepia" src="./assets/imagenes/gcb31.svg"  onclick="clickGcb31()"/>
+        <img class="unidad3 unidad-sepia" src="./assets/imagenes/gcb32.svg"  onclick="clickGcb32()"/>
+        <img class="unidad4 unidad-sepia" src="./assets/imagenes/gcb33.svg"  onclick="clickGcb33()"/>
+        <img class="unidad5 unidad-sepia" src="./assets/imagenes/escablin.svg"  onclick="clickEscablin()"/>
+        <img class="unidad6 unidad-sepia" src="./assets/imagenes/gcb4.svg"  onclick="clickGcb4()"/>
+        <img class="unidad7 unidad-sepia" src="./assets/imagenes/gcm12.svg"  onclick="clickGcm12()"/>
+        <img class="unidad8 unidad-sepia" src="./assets/imagenes/gcm18.svg"  onclick="clickGcm18()"/>
+        <img class="unidad9 unidad-sepia" src="./assets/imagenes/gcb36.svg"  onclick="clickGcb36()"/>
+        <img class="unidad10 unidad-sepia" src="./assets/imagenes/gcmiiide.svg"  onclick="clickGcmiiide()"/>
+</div>
+        
+     
+  </body>
+</html>
   <script>
     function clickBcb11(){
       
