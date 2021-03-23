@@ -3,46 +3,46 @@
   <head>
     <meta charset="UTF-8">
     <title>Casa Museo</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./estilos/grid_vehiculos_blindados.css">
     <link rel="stylesheet" href="./estilos/hover_zoom.css">
 
   </head>
   <body>
-    <div class="container">
+    <div class="grid-container">
       <h1 class="titulo"> CABALLERIA BLINDADA </h1>
          <!-- <h2 class="subtitulo"> Museo de Vehículos Blindados </h2> -->
-         <div class="subtitulo">
-           <div id="hover01">
-              <figure><img src="./assets/imagenes/tanques_blindados/9_camion_reo.svg"></figure>
-           </div>
+        <div class="muestra">
+          <h2 class="subtitulo"> Museo de Vehículos Blindados </h2>
+          <img  id="vehiculo_muestra" src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" />
+          <h2> Museo de Vehículos Blindados </h2>
         </div>
-    <div class="vehiculo1">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()"  />
+    
+    <div class="item1 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
     </div>
-    <div class="vehiculo2">
-      <img src="./assets/imagenes/tanques_blindados/2_tanque_stuard.svg" onclick="clickMarmonHerrington()" />
+    <div class="item2 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/2_tanque_stuard.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
     </div>
-    <div class="vehiculo3">
-      <img src="./assets/imagenes/tanques_blindados/3_tanque_aml.svg" onclick="clickMarmonHerrington()" />
+    <div class="item3 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/3_tanque_aml.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
     </div>
-    <div class="vehiculo4">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" />
+    <div class="item4 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/4_tanque_t55.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
     </div>
-    <div class="vehiculo5">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" />
+    <div class="item5 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/5_vehiculo_explorador.svg" onclick="clickMarmonHerrington()" />
     </div>
-    <div class="vehiculo6">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" />
+    <div class="item6 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/6_vehiculo_fenix.svg" onclick="clickMarmonHerrington()" />
     </div>
-    <div class="vehiculo7">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" />
+    <div class="item7 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/7_vehiculo_mamut.svg" onclick="clickMarmonHerrington()" />
     </div>
-    <div class="vehiculo8">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" />
+    <div class="item8 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/8_vehiculo_apc.svg" onclick="clickMarmonHerrington()" />
     </div>
-    <div class="vehiculo9">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" />
+    <div class="item9 hover-zoom figure">
+      <img src="./assets/imagenes/tanques_blindados/9_camion_reo.svg" onclick="clickMarmonHerrington()" />
     </div>
    
 
@@ -82,5 +82,8 @@
   function clickCamionReo(){
     window.open('./MuseoVehiculosBlindados/CamionReo.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
   }
- 
+ function mouseOver(){
+  console.log("El id es"+ event.target.src);
+  document.getElementById("vehiculo_muestra").src = event.target.src;
+ }
 </script>
