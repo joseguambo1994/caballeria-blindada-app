@@ -2,10 +2,18 @@
     font-family: fuente-militar;
     src: url(../estilos/angkatan.otf);
   }
-    
-  .titulo { grid-area: header; }
+ 
+  .titulo { grid-area: header; 
+    background: rgba(0, 0, 0, 0.6);
+    font-family: fuente-militar;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 5px; 
+  }
   .muestra { grid-area: menu;
-      background-color: red; 
+      
       margin-top: auto;
       margin-bottom: auto;
 }
@@ -31,7 +39,6 @@
       'menu vehiculo7 vehiculo8 vehiculo9'
       ;
     /* grid-gap: 10px; */
-    background-color: #2196F3;
   }
   
   .grid-container > div {
@@ -46,6 +53,11 @@
   img#vehiculo_muestra{
     width: 420px;
     position: relative;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+    border-style: solid;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 20px;
     
   }
 
@@ -55,4 +67,8 @@
     text-align: center;
     color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  .fuente-vehiculo{
+    
+    font-size: fuente-militar;
   }

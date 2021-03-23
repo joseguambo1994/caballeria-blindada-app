@@ -5,8 +5,12 @@
     <title>Casa Museo</title>
     <link rel="stylesheet" href="./estilos/grid_vehiculos_blindados.css">
     <link rel="stylesheet" href="./estilos/hover_zoom.css">
-
   </head>
+  <style>
+    body {
+      background-image: url('./assets/imagenes/portada_vehiculos_blindados2.svg');
+    }
+    </style>
   <body>
     <div class="grid-container">
       <h1 class="titulo"> CABALLERIA BLINDADA </h1>
@@ -14,35 +18,39 @@
         <div class="muestra">
           <h2 class="subtitulo"> Museo de Vehículos Blindados </h2>
           <img  id="vehiculo_muestra" src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" />
-          <h2> Museo de Vehículos Blindados </h2>
+          
+          <div id="nombre-vehiculo"  class="line-1 anim-typewriter" style="font-family: fuente-militar;">
+             Marmon Herrington
+            </div>
+          
         </div>
     
     <div class="item1 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
+      <img src="./assets/imagenes/tanques_blindados/1_marmon_herrington.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" alt="Marmon Herrington"/>
     </div>
     <div class="item2 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/2_tanque_stuard.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
+      <img src="./assets/imagenes/tanques_blindados/2_tanque_stuard.svg" onclick="clickTanqueStuard()" onmouseover="mouseOver()" alt="Tanque Stuard" />
     </div>
     <div class="item3 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/3_tanque_aml.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
+      <img src="./assets/imagenes/tanques_blindados/3_tanque_aml.svg" onclick="clickTanqueAml()" onmouseover="mouseOver()" alt="Tanques AML-90 y AML-60" />
     </div>
     <div class="item4 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/4_tanque_t55.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" />
-    </div>
+      <img src="./assets/imagenes/tanques_blindados/4_tanque_t55.svg" onclick="clickTanqueT55()" onmouseover="mouseOver()" alt="Tanque T-55 Barreminas"/>
+      </div>
     <div class="item5 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/5_vehiculo_explorador.svg" onclick="clickMarmonHerrington()" />
+      <img src="./assets/imagenes/tanques_blindados/5_vehiculo_explorador.svg" onclick="clickVehiculoExplorador()" onmouseover="mouseOver()" alt="Vehículo Explorador"/>
     </div>
     <div class="item6 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/6_vehiculo_fenix.svg" onclick="clickMarmonHerrington()" />
+      <img src="./assets/imagenes/tanques_blindados/6_vehiculo_fenix.svg" onclick="clickVehiculoFenix()" onmouseover="mouseOver()" alt="Vehículo Fénix"/>
     </div>
     <div class="item7 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/7_vehiculo_mamut.svg" onclick="clickMarmonHerrington()" />
+      <img src="./assets/imagenes/tanques_blindados/7_vehiculo_mamut.svg" onclick="clickVehiculoMamut()" onmouseover="mouseOver()" alt="Vehículo Mamut"/>
     </div>
     <div class="item8 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/8_vehiculo_apc.svg" onclick="clickMarmonHerrington()" />
+      <img src="./assets/imagenes/tanques_blindados/8_vehiculo_apc.svg" onclick="clickVehiculoApc()" onmouseover="mouseOver()" alt="Vehículo APC"/>
     </div>
     <div class="item9 hover-zoom figure">
-      <img src="./assets/imagenes/tanques_blindados/9_camion_reo.svg" onclick="clickMarmonHerrington()" />
+      <img src="./assets/imagenes/tanques_blindados/9_camion_reo.svg" onclick="clickCamionReo()" onmouseover="mouseOver()" alt="Camión REO"/>
     </div>
    
 
@@ -85,5 +93,8 @@
  function mouseOver(){
   console.log("El id es"+ event.target.src);
   document.getElementById("vehiculo_muestra").src = event.target.src;
+  var elemento = event.target;
+  console.log("El nombre almacenado es:" + elemento.alt);
+  document.getElementById("nombre-vehiculo").innerHTML = event.target.alt;
  }
 </script>
