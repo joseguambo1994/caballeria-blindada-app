@@ -3,16 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="./estilos/video_historia_unidades.css"> 
+    <link href='./estilos/grid_museos_interactivos.css' rel='stylesheet' type='text/css'> 
+    <link href='./estilos/hover_button_mask.css' rel='stylesheet' type='text/css'> 
   </head>
+  
   <body>
-    <h1>Museso Interactivos</h1>
-    <p> Museos Interactivos  </p>
-    <button id="btnCasaMuseo" onclick="clickCasaMuseo()">Casa Museo</button>
-    <button id="btnVehiculosBlindados" onclick="clickVehiculosBlindados()">Museo de Vehículos Blindados</button>
-   
+    <video playsinline autoplay muted loop poster="./assets/imagenes/portada_museos_interactivos.svg" id="portada-video">
+      <source src="./assets/videos/presentacion/portada_museos_interactivos2.mp4" type="video/mp4">
+    </video>
     
+     <div class="container">
+    
+       <h1 class="titulo"> CABALLERIA BLINDADA </h1>
+       <h2 class="subtitulo"> Historia de las Unidades </h2>
+        <!-- <button class="museo1" onclick="clickCasaMuseo()">Casa Museo</button> -->
+        <!-- <button class="museo2" onclick="clickVehiculosBlindados()">Museo de Vehículos Blindados</button> -->
+
+
+        <div class="museo1">
+          <div class="button-container-1" onclick="clickCasaMuseo()">
+            <span class="mas">Casa Museo</span>
+          <button id='work' type="button" name="Hover">Casa Museo</button>
+        </div>
+        </div>
+        <div class="museo2">
+          <div class="button-container-1" onclick="clickVehiculosBlindados()">
+            <span class="mas">Museo de Vehículos Blindados</span>
+          <button id='work' type="button" name="Hover">Museo de Vehículos Blindados</button>
+        </div>
+        </div>
+
+</div>
+        
+     
   </body>
 </html>
 <script>
