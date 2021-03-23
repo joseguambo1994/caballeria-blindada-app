@@ -1,0 +1,34 @@
+@font-face {
+    font-family: fuente-militar;
+    src: url(../estilos/angkatan.otf);
+  }
+.titulo { grid-area: titulo;
+    background: rgba(0, 0, 0, 0.6);
+    font-family: fuente-militar;
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 5px; 
+}
+.sala1 { grid-area: sala1; }
+.sala2 { grid-area: sala2; }
+.sala3 { grid-area: sala3; }
+.sala4 { grid-area: sala4; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "sala1 sala2"
+    "sala3 sala4";
+
+}
+
+.align-right{
+    text-align: right;
+}
+.align-left{
+    text-align: left;
+}
