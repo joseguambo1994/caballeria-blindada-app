@@ -1,5 +1,6 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, Menu } = require('electron');
 const path = require('path');
+const { electron } = require('process');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
@@ -14,6 +15,36 @@ const createWindow = () => {
       nodeIntegration: true
     }
   });
+  const shell = require('electron').shell
+  var menu = Menu.buildFromTemplate([
+    {
+        label: 'Menu',
+        submenu: [
+          {label:'Menu Principal',
+            click(){
+              openMainWindow(mainWindow.id)
+            }
+          },
+            {label:'Cerrar Ventana',
+            role: 'close'
+          },
+            {label: 'Anterior',
+              click(){
+                navToPreviousWindow(mainWindow.id)
+              }
+              
+          },
+            {label:'Salir',
+              click(){
+                app.quit()
+              }
+            },{label:'Herramientas de desarrollador',
+            role: 'toggleDevTools'
+          }
+        ]
+    }
+])
+Menu.setApplicationMenu(menu); 
 
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'index.html'));
@@ -46,3 +77,36 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+ventanaPrincipal= null;
+
+function openMainWindow(id) {
+  
+  ventanaPrincipal = BrowserWindow.fromId(id);
+  openedWindowsArray = BrowserWindow.getAllWindows();
+  openedWindowsArray.forEach(element => {
+    if (element != ventanaPrincipal){
+      element.close();
+    }
+  });
+  ventanaPrincipal.focus();
+
+}
+
+function navToPreviousWindow(id){
+  var idChildWindow = null;
+  ventanaPrincipal = BrowserWindow.fromId(id);
+  openedWindowsArray = BrowserWindow.getAllWindows();
+  openedWindowsArray.forEach(element => {
+    if (element != ventanaPrincipal){
+      console.log("Id de los hijos"+ element.id)
+      idChildWindow=element.id;
+      ventanaHijo = BrowserWindow.fromId(idChildWindow);
+      console.log("Puede ir atrás?"+ ventanaHijo.webContents.canGoBack());
+      ventanaHijo.webContents.goBack();
+    }else{
+      console.log("Id de la principal"+ ventanaPrincipal.id)
+    }
+ 
+
+  });
+}
