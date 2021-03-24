@@ -11,6 +11,14 @@
     font-size: 90px;
     padding-top: 5px; 
 }
+.subtitulo {
+  grid-area: subtitulo;
+  font-size: 40px;
+  font-family: fuente-militar;
+  text-align: center;
+  color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px rgb(13, 156, 0), 0 0 5px rgb(1, 116, 16);
+}
 .sala1 { grid-area: sala1; }
 .sala2 { grid-area: sala2; }
 .sala3 { grid-area: sala3; }
@@ -19,8 +27,10 @@
 
 .grid-container {
   display: grid;
+  grid-template-rows: 15% 7% 37% 37%;
   grid-template-areas:
     "titulo titulo"
+    "subtitulo subtitulo"
     "sala1 sala2"
     "sala3 sala4";
 

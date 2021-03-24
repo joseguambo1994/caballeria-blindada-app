@@ -1,11 +1,48 @@
-<div>
-    <p>Operaciones<P>
-    <button onclick="clickOperacionesEjerciciosHipomoviles()">Operacione y Ejercicios Hipomóviles</button>
-    <button onclick="clickDestrezasMilitaresCaballo()">Destrezas militares a caballo</button>
-    <button onclick="clickEsculaOperacionesHipicas()">Escuela de Operaciones Hípicas</button>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./estilos/video_historia_unidades.css"> 
+    <link href='./estilos/grid_operaciones.css' rel='stylesheet' type='text/css'> 
+    <link href='./estilos/hover_button_mask.css' rel='stylesheet' type='text/css'> 
+  </head>
   
+  <body>
+    <video playsinline autoplay muted loop poster="./assets/imagenes/portada_operaciones.svg" id="portada-video">
+      <source src="./assets/videos/presentacion/portada_operaciones.mp4" type="video/mp4">
+    </video>
     
-  <div>
+     <div class="container">
+    
+       <h1 class="titulo"> CABALLERIA BLINDADA </h1>
+       <h2 class="subtitulo"> Operaciones Hípicas </h2>
+    
+
+        <div class="operacion1">
+          <div class="button-container-1" onclick="clickOperacionesEjerciciosHipomoviles()">
+            <span class="mas">Ejercicios Hipomóviles</span>
+          <button id='work' type="button" name="Hover">Ejercicios Hipomóviles</button>
+        </div>
+        </div>
+        <div class="operacion2">
+          <div class="button-container-1" onclick="clickDestrezasMilitaresCaballo()">
+            <span class="mas">Destrezas Militares a Caballo</span>
+          <button id='work' type="button" name="Hover">Destrezas Militares a Caballo</button>
+        </div>
+        </div>
+        <div class="operacion3">
+          <div class="button-container-1" onclick="clickEscuelaOperacionesHipicas()">
+            <span class="mas">Escuela Operaciones Hípicas</span>
+          <button id='work' type="button" name="Hover">Escuela Operaciones Hípicas</button>
+        </div>
+        </div>
+
+</div>
+        
+     
+  </body>
+</html>
     <script>
       function clickOperacionesEjerciciosHipomoviles(){
         
@@ -15,7 +52,7 @@
         
         window.open('./Operaciones/DestrezasMilitaresCaballo.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,fullscreen=true')
       }
-      function clickEsculaOperacionesHipicas(){
+      function clickEscuelaOperacionesHipicas(){
         
         window.open('./Operaciones/EscuelaOperacionesHipicas.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,fullscreen=true')
       }
