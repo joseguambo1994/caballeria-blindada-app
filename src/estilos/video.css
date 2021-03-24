@@ -1,5 +1,5 @@
 #portada-video {
-    object-fit: cover;
+    object-fit: fill;
   width: 100vw;
   height: 100vh;
   position: fixed;
