@@ -2,43 +2,66 @@
     font-family: fuente-militar;
     src: url(../estilos/angkatan.otf);
   }
-.titulo { grid-area: titulo;
+ 
+  .titulo { grid-area: header; 
     background: rgba(0, 0, 0, 0.6);
     font-family: fuente-militar;
     color: white;
     margin: 0;
     text-align: center;
-    font-size: 90px;
+    font-size: 12vh;
     padding-top: 5px; 
+  }
+  .muestra { grid-area: menu;
+      
+      margin-top: auto;
+      margin-bottom: auto;
 }
-.subtitulo {
-  grid-area: subtitulo;
-  font-size: 40px;
-  font-family: fuente-militar;
-  text-align: center;
-  color: white;
-text-shadow: 1px 1px 2px black, 0 0 25px rgb(13, 156, 0), 0 0 5px rgb(1, 116, 16);
-}
-.sala1 { grid-area: sala1; }
-.sala2 { grid-area: sala2; }
-.sala3 { grid-area: sala3; }
-.sala4 { grid-area: sala4; }
+  .item1 { grid-area: vehiculo1; }
+  .item2 { grid-area: vehiculo2; 
+      }
+  .item3 { grid-area: vehiculo3; }
+  .item4 { grid-area: vehiculo4; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      'header header header'
+      'menu vehiculo1 vehiculo2'
+      'menu vehiculo3 vehiculo4'
 
+      ;
+    /* grid-gap: 10px; */
+  }
+  
+  .grid-container > div {
+    
+    text-align: center;
+    font-size: 4vh;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  img#vehiculo_muestra{
+    width: 420px;
+    position: relative;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+    border-style: solid;
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 20px;
+    
+  }
 
-.grid-container {
-  display: grid;
-  grid-template-rows: 15% 7% 37% 37%;
-  grid-template-areas:
-    "titulo titulo"
-    "subtitulo subtitulo"
-    "sala1 sala2"
-    "sala3 sala4";
-
-}
-
-.align-right{
-    text-align: right;
-}
-.align-left{
-    text-align: left;
-}
+  .subtitulo{
+    font-size: 4vh;
+    font-family: fuente-militar;
+    text-align: center;
+    color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  

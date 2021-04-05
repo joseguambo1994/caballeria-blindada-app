@@ -3,77 +3,70 @@
   <head>
     <meta charset="UTF-8">
     <title>Casa Museo</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./estilos/grid_casa_museo.css">
-    <link rel="stylesheet" href="./estilos/hover_casa_museo.css">
-    <style>
-      body {
-        background-image: url('./assets/imagenes/portada_vehiculos_blindados2.svg');
-      }
-      </style>
+    <link rel="stylesheet" href="./estilos/hover_zoom.css">
   </head>
+  <style>
+    body {
+      background-image: url('./assets/imagenes/portada_vehiculos_blindados2.svg');
+    }
+    </style>
   <body>
     <div class="grid-container">
-      <div class="titulo">CABALLERIA BLINDADA</div>
-      <div class="subtitulo">Casa Museo</div>
-      <div class="sala1 align-right">
-        <div class="container right" onclick="clickSalaComunicaciones()">
-              <img class="image" src="./assets/imagenes/casa_museo/sala_comunicaciones.svg"  width="65%">
-            <div class="overlay">
-              <div class="text">Introducción y Sala de Comunicaciones</div>
+      <h1 class="titulo"> CABALLERIA BLINDADA </h1>
+         <!-- <h2 class="subtitulo"> Museo de Vehículos Blindados </h2> -->
+        <div class="muestra">
+          <h2 class="subtitulo"> Casas Museo </h2>
+          <img  id="vehiculo_muestra" src="./assets/imagenes/casa_museo/sala_armas.svg" />
+          
+          <div id="nombre-vehiculo"  class="line-1 anim-typewriter" style="font-family: fuente-militar;">
+             Marmon Herrington
             </div>
-      </div>
+          
         </div>
-      <div class="sala2 align-left">
-      
-        <div class="container left" onclick="clickSalaArtilleria()">
-          <img class="image" src="./assets/imagenes/casa_museo/sala_artilleria.svg"  width="65%">
-        <div class="overlay">
-          <div class="text">Sala de Artillería</div>
-        </div>
-  </div>
-      
-      </div>  
-      <div class="sala3 align-right">
-        
-        <div class="container right" onclick="clickSalaArmas()" >
-          <img class="image" src="./assets/imagenes/casa_museo/sala_armas.svg" width="65%">
-        <div class="overlay">
-          <div class="text">Batalla de Tapi y Sala de Armas</div>
-        </div>
-  </div>
-
-
-      </div>
-      <div class="sala4 align-left">
-        
-        <div class="container left" onclick="clickSalaCaballeria()">
-          <img class="image" src="./assets/imagenes/casa_museo/sala_caballeria.svg"  width="65%">
-        <div class="overlay">
-          <div class="text">Sala de Caballeria</div>
-        </div>
-  </div>
-
-
-      </div>
+    
+    <div class="item1 hover-zoom figure">
+      <img src="./assets/imagenes/casa_museo/sala_armas.svg" onclick="clickMarmonHerrington()" onmouseover="mouseOver()" alt="Sala de Comunicaciones"/>
     </div>
+    <div class="item2 hover-zoom figure">
+      <img src="./assets/imagenes/casa_museo/sala_artilleria.svg" onclick="clickTanqueStuard()" onmouseover="mouseOver()" alt="Sala de Artilleria" />
+    </div>
+    <div class="item3 hover-zoom figure">
+      <img src="./assets/imagenes/casa_museo/sala_comunicaciones.svg" onclick="clickTanqueAml()" onmouseover="mouseOver()" alt="Batalla de Tapi y Sala de Armas" />
+    </div>
+    <div class="item4 hover-zoom figure">
+      <img src="./assets/imagenes/casa_museo/sala_caballeria.svg"  onclick="clickTanqueT55()" onmouseover="mouseOver()" alt="Sala de Caballeria"/>
+      </div>
+   
+   
+
+
+
+         </div>
     
    
     
   </body>
 </html>
 <script>
-  function clickSalaComunicaciones(){
+  function clickMarmonHerrington(){
+    window.open('./CasaMuseo/SalaArmas.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+  function clickTanqueStuard(){
+    window.open('./CasaMuseo/SalaArtilleria.html' , '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
+  }
+  function clickTanqueAml(){
     window.open('./CasaMuseo/SalaComunicaciones.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
   }
-  function clickSalaArmas(){
-    window.open('./CasaMuseo/SalaArmas.html', '_blank', 'frame=true,nodeIntegration=yes')
-    
-  }
-  function clickSalaArtilleria(){
-    window.open('./CasaMuseo/SalaArtilleria.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
-  }
-  function clickSalaCaballeria(){
+  function clickTanqueT55(){
     window.open('./CasaMuseo/SalaCaballeria.html', '_blank', 'top=0,left=0,frame=false,nodeIntegration=yes,width=800, heigth=600')
   }
+
+ function mouseOver(){
+  console.log("El id es"+ event.target.src);
+  document.getElementById("vehiculo_muestra").src = event.target.src;
+  var elemento = event.target;
+  console.log("El nombre almacenado es:" + elemento.alt);
+  document.getElementById("nombre-vehiculo").innerHTML = event.target.alt;
+ }
 </script>

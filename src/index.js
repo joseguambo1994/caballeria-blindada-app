@@ -39,10 +39,10 @@ const createWindow = () => {
                 app.quit()
               }
             }
-          //   ,
-          //   {label:'Herramientas de desarrollador',
-          //   role: 'toggleDevTools'
-          // }
+            ,
+            {label:'Herramientas de desarrollador',
+            role: 'toggleDevTools'
+          }
         ]
     }
 ])

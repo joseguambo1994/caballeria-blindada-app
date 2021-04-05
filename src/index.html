@@ -16,20 +16,12 @@
       <div class="grid">
     
        <h1 class="title"> CABALLERIA BLINDADA </h1>
-        <figure class="effect-lily">
-          <img src="./assets/imagenes/portada_historia_unidades.svg" alt="img12"/>
-          <figcaption>
-            <div>
-              <h2>Tradiciones <span>Militares</span></h2>
-            </div>
-            <a href="#">View more</a>
-          </figcaption>     
-        </figure>
+        
         <figure class="effect-lily" onclick="clickHistoriaUnidades()">
           <img src="./assets/imagenes/portada_historia_unidades.svg" alt="img1"/>
           <figcaption>
             <div>
-              <h2>Historia <span>Unidades</span></h2>
+              <h2>Historia <br><span>Unidades</span><br></h2>
             </div>
             <a href="#">View more</a>
           </figcaption>     
@@ -38,7 +30,7 @@
           <img src="./assets/imagenes/portada_himnos_canciones.svg" alt="img1"/>
           <figcaption>
             <div>
-              <h2>Himnos y <span>Canciones</span></h2>
+              <h2>Himnos y <br><span>Canciones</span><br></h2>
             </div>
             <a href="#">View more</a>
           </figcaption>     
@@ -47,7 +39,7 @@
           <img src="./assets/imagenes/portada_museos_interactivos.svg" alt="img1"/>
           <figcaption>
             <div>
-              <h2>Museos <span>Interactivos</span></h2>
+              <h2>Museos <br><span>Interactivos</span><br></h2>
               </div>
             <a href="#">View more</a>
           </figcaption>     
@@ -56,10 +48,7 @@
           <img src="./assets/imagenes/portada_ceremonias.svg" alt="img1"/>
           <figcaption>
             <div>
-              <h2>Ceremonias           
-                <br>
-                <br>
-              </h2>
+              <h2>Ceremonias<br> </h2>
              </div>
             <a href="#">View more</a>
           </figcaption>     
@@ -68,18 +57,26 @@
           <img src="./assets/imagenes/portada_operaciones.svg" alt="img1"/>
           <figcaption>
             <div>
-              <h2>Operaciones <span>Hípicas</span></h2>
+              <h2>Operaciones <br><span> Hipomóviles</span></h2>
               </div>
             <a href="#">View more</a>
           </figcaption>     
         </figure>
       </figure>
-      <figure class="effect-lily" onclick="clickFlorilegio()">
-        <img src="./assets/imagenes/portada_florilegio_4.svg" alt="img1"/>
+      <figure class="effect-lily" onclick="clickDestrezas()">
+        <img src="./assets/imagenes/portada_destrezas.svg" alt="img12"/>
         <figcaption>
           <div>
-            <h2><span>Florilegio<br>
-            </span><br></h2>
+            <h2>Destrezas <br>Militares &nbsp;a <br>Caballo</h2>
+          </div>
+          <a href="#">View more</a>
+        </figcaption>     
+      </figure>
+      <figure class="effect-lily" onclick="clickFlorilegio()">
+        <img src="./assets/imagenes/portada_florilegio.svg" alt="img1"/>
+        <figcaption>
+          <div>
+            <h2>Florilegio<br> </h2>
             </div>
           <a href="#">View more</a>
         </figcaption>     
@@ -104,6 +101,9 @@
   }
   function clickOperaciones(){
     window.open('./Operaciones.html', '_blank', 'frame=true,nodeIntegration=yes')
+  }
+  function clickDestrezas(){
+    window.open('./Destrezas.html', '_blank', 'frame=true,nodeIntegration=yes')
   }
   function clickFlorilegio(){
     window.open('./Florilegio/Florilegio.html', '_blank', 'frame=true,fullscreen=true')
