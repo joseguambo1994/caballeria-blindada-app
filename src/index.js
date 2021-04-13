@@ -24,11 +24,13 @@ const createWindow = () => {
             click(){
               openMainWindow(mainWindow.id)
             }
-          },
-            {label:'Cerrar Ventana',
-            role: 'close'
-          },
-            {label: 'Anterior',
+          }
+          // ,
+          //   {label:'Cerrar Ventana',
+          //   role: 'close'
+          // }
+          ,
+            {label: 'Menú Anterior',
               click(){
                 navToPreviousWindow(mainWindow.id)
               }
@@ -39,10 +41,10 @@ const createWindow = () => {
                 app.quit()
               }
             }
-            ,
-            {label:'Herramientas de desarrollador',
-            role: 'toggleDevTools'
-          }
+          //   ,
+          //   {label:'Herramientas de desarrollador',
+          //   role: 'toggleDevTools'
+          // }
         ]
     }
 ])
