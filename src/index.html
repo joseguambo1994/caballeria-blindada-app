@@ -15,6 +15,9 @@
     
       <div class="grid">
     
+        <div class="logo">
+          <img class="logo logo-image" src="./assets/imagenes/logo_cb.svg" onclick="clickIntroduccion()"/>
+        </div>
        <h1 class="title"> CABALLERIA BLINDADA </h1>
         
         <figure class="effect-lily" onclick="clickHistoriaUnidades()">
@@ -86,6 +89,9 @@
   </body>
 </html>
 <script>
+  function clickIntroduccion(){
+    window.open('./Introduccion.html', '_blank', 'frame=true,nodeIntegration=yes')
+  }
   function clickHistoriaUnidades(){
     window.open('./HistoriaUnidades.html', '_blank', 'frame=true,nodeIntegration=yes')
   }
@@ -108,4 +114,5 @@
   function clickFlorilegio(){
     window.open('./Florilegio/Florilegio.html', '_blank', 'frame=true,fullscreen=true')
   }
+
 </script>

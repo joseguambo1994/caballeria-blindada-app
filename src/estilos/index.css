@@ -31,8 +31,26 @@
 "footer footer footer footer footer footer footer"
 ; 
 }
+.logo{
+  grid-area: header;
+  position: relative;
+  display: flex;
+    /* justify-content: center; */
+    justify-content: center;
 
-
+    transition: transform 0.5s;
+    margin-bottom: 0%;
+    
+} 
+.logo.logo-image{
+  width: 9%;
+  height: auto;
+  align-self: flex-end;
+  
+} 
+.logo.logo-image:hover {
+  transform: scale(1.3);
+}
  
   /* Common style */
   .grid figure {
